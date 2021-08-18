@@ -1,0 +1,47 @@
+$green: #1dc078;
+
+#header .container{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#header .navbar{
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+#header .content{
+  display: flex;
+
+  .brand_header .brand_logo{
+    fill: $green;
+    margin-right: 8px;
+    padding: 10px 0;
+  }
+
+  .navbar-menu{
+    display: flex;
+    align-items: center;
+
+    .left-menu{
+      display: flex;
+
+      .item{
+        font-size: 16px;
+        padding: 10px 16px;
+
+        &:hover{
+          color: $green;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right-menu{
+      position: absolute;
+      right: 0;
+    }
+  }
+}

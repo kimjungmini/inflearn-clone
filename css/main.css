@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+#header .container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#header .navbar {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .content .brand_header .brand_logo {
+  fill: #1dc078;
+  margin-right: 8px;
+  padding: 10px 0;
+}
+
+#header .content .navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .content .navbar-menu .left-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .content .navbar-menu .left-menu .item {
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+#header .content .navbar-menu .left-menu .item:hover {
+  color: #1dc078;
+  cursor: pointer;
+}
+
+#header .content .navbar-menu .right-menu {
+  position: absolute;
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */
