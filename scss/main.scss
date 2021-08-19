@@ -1,19 +1,30 @@
 $green: #1dc078;
-
-#header .container{
+// COMMON
+.container{
   width: 1200px;
   margin: 0 auto;
-  position: relative;
+}
+
+// HEADER
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
 }
 
 #header .navbar{
   height: 64px;
   display: flex;
   align-items: center;
+  box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
 }
 
 #header .content{
   display: flex;
+  position: relative;
 
   .brand_header .brand_logo{
     fill: $green;
@@ -35,6 +46,38 @@ $green: #1dc078;
         &:hover{
           color: $green;
           cursor: pointer;
+        }
+      }
+
+      .dropdown{
+        position: relative;
+
+        .submenu{
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          color: #000;
+          width: 180px;
+          height: 410px;
+          top: 37px;
+          left: -10px;
+          box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
+
+          &:hover{
+            display: block;
+          }
+
+          .submenu-item{
+            padding: 10px 10px;
+          }
+        }
+
+        .submenu-small{
+          width: 120px;
+          height: auto;
+        }
+        &:hover .submenu{
+          display: block;
         }
       }
     }

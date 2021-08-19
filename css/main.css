@@ -1,7 +1,14 @@
-#header .container {
+.container {
   width: 1200px;
   margin: 0 auto;
-  position: relative;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 #header .navbar {
@@ -12,12 +19,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
+          box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
 }
 
 #header .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 #header .content .brand_header .brand_logo {
@@ -49,6 +59,40 @@
 #header .content .navbar-menu .left-menu .item:hover {
   color: #1dc078;
   cursor: pointer;
+}
+
+#header .content .navbar-menu .left-menu .dropdown {
+  position: relative;
+}
+
+#header .content .navbar-menu .left-menu .dropdown .submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  width: 180px;
+  height: 410px;
+  top: 37px;
+  left: -10px;
+  -webkit-box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
+          box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
+}
+
+#header .content .navbar-menu .left-menu .dropdown .submenu:hover {
+  display: block;
+}
+
+#header .content .navbar-menu .left-menu .dropdown .submenu .submenu-item {
+  padding: 10px 10px;
+}
+
+#header .content .navbar-menu .left-menu .dropdown .submenu-small {
+  width: 120px;
+  height: auto;
+}
+
+#header .content .navbar-menu .left-menu .dropdown:hover .submenu {
+  display: block;
 }
 
 #header .content .navbar-menu .right-menu {
