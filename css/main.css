@@ -3,6 +3,19 @@
   margin: 0 auto;
 }
 
+.btn {
+  background-color: #fff;
+  color: #363636;
+  border: 1px solid #DBDBDB;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background-color: #ff6d5a;
+  color: #fff;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -72,7 +85,7 @@
   color: #000;
   width: 180px;
   height: 410px;
-  top: 37px;
+  top: 40px;
   left: -10px;
   -webkit-box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
           box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
@@ -98,5 +111,46 @@
 #header .content .navbar-menu .right-menu {
   position: absolute;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .content .navbar-menu .right-menu .search-box {
+  position: relative;
+  margin-right: 8px;
+}
+
+#header .content .navbar-menu .right-menu .search-box .search {
+  background-color: #f6f6f6;
+  padding: 5px 9px;
+  height: 36px;
+  width: 176px;
+  border: none;
+}
+
+#header .content .navbar-menu .right-menu .search-box .search:hover {
+  border: 1px solid #b5b5b5;
+}
+
+#header .content .navbar-menu .right-menu .search-box .search:focus {
+  border-color: #1dc078;
+  outline: 2px solid #1dc078;
+}
+
+#header .content .navbar-menu .right-menu .search-box .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#header .content .navbar-menu .right-menu .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .content .navbar-menu .right-menu .btn-group a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
