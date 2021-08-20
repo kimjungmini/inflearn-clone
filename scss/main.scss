@@ -3,12 +3,14 @@ $green: #1dc078;
 .container{
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .btn{
   background-color: #fff;
   color: #363636;
   border: 1px solid #DBDBDB;
+  border-radius: 4px;
   padding: 8px;
   margin-right: 8px;
 }
@@ -23,8 +25,7 @@ $green: #1dc078;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
-  
+  z-index: 20;
 }
 
 #header .navbar{
@@ -50,7 +51,7 @@ $green: #1dc078;
 
     .left-menu{
       display: flex;
-
+      
       .item{
         font-size: 16px;
         padding: 10px 16px;
@@ -74,7 +75,7 @@ $green: #1dc078;
           top: 40px;
           left: -10px;
           box-shadow: 8px 5px 8px 1px rgba(0, 10, 18, 0.1);
-
+  
           &:hover{
             display: block;
           }
@@ -135,6 +136,71 @@ $green: #1dc078;
           text-decoration: none;
         }
       }
+    }
+  }
+}
+
+#main {
+  margin-top: 64px;
+}
+
+.swiper-container{
+  height: 320px;
+}
+
+.swiper-slide {
+  .slide-content{
+    height: 100%;
+
+    .container{
+      height: 100%;
+    }
+  }
+  
+  .cover_right{
+    width: 730px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img{
+      max-width: 100%;
+    }
+  }
+  
+  .cover_left{
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    left: 10px;
+    max-width: 600px;
+
+    .tags{
+      display: flex;
+
+      div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 10px;
+        height: 24px;
+        font-size: 0.875rem;
+        font-weight: 700;
+        border-radius: 4px;
+        margin-right: 8px;
+      }
+    }
+    .title{
+      font-size: 2rem;
+      white-space: pre;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    p{
+      line-height: 1.5;
     }
   }
 }
