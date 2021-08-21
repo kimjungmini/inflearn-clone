@@ -12,12 +12,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- font awsome -->
-  <script src="https://kit.fontawesome.com/8510e6e8aa.js" crossorigin="anonymous"></script>
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/8510e6e8aa.js" crossorigin="anonymous"></script>
   <script defer src="./js/main.js"></script>
   <title>인프런 클론 코딩!</title>
 </head>
@@ -91,13 +92,13 @@
     <!-- HEADER END -->
     <main id="main">
       <section class="top-slide">
-          <div class="swiper-container">
+          <div class="swiper-container top">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slide-content" style="background-color: #242436;">
                   <div class="container">
                     <div class="cover_right">
-                      <img src="/images/top-slide-image1.png" alt="누적 수강생 6만!" />
+                      <img src="./images/top-slide-image1.png" alt="수강생 6만 기념" />
                     </div>
                     <div class="cover_left">
                       <div class="tags">
@@ -117,7 +118,7 @@
                 <div class="slide-content" style="background-color: #00d078"">
                   <div class="container">
                     <div class="cover_right">
-                      <img src="/images/top-slide-image2.png" alt="누적 수강생 6만!" />
+                      <img src="./images/top-slide-image2.png" alt="나에게 맞는 강의" />
                     </div>
                     <div class="cover_left">
                       <h1 class="title" style="color: #000000;">
@@ -134,7 +135,7 @@
                 <div class="slide-content" style="background-color: #edeff9">
                   <div class="container">
                     <div class="cover_right">
-                      <img src="/images/top-slide-image3.png" alt="누적 수강생 6만!" />
+                      <img src="./images/top-slide-image3.png" alt="광복절 주간 이벤트" />
                     </div>
                     <div class="cover_left">
                       <div class="tags">
@@ -155,7 +156,7 @@
                 <div class="slide-content" style="background-color: #8aeef2">
                   <div class="container">
                     <div class="cover_right">
-                      <img src="/images/top-slide-image4.gif" alt="누적 수강생 6만!" />
+                      <img src="./images/top-slide-image4.gif" alt="코딩 입문 가이드" />
                     </div>
                     <div class="cover_left">
                       <div class="tags">
@@ -174,7 +175,7 @@
                 <div class="slide-content" style="background-color: #fbfbf3">
                   <div class="container">
                     <div class="cover_right">
-                      <img src="/images/top-slide-image5.gif" alt="누적 수강생 6만!" />
+                      <img src="./images/top-slide-image5.gif" alt="누적 수강생 6만!" />
                     </div>
                     <div class="cover_left">
                       <div class="tags">
@@ -194,7 +195,7 @@
                 <div class="slide-content" style="background-color: #ddff67">
                   <div class="container">
                     <div class="cover_right">
-                      <img src="/images/top-slide-image6.gif" alt="누적 수강생 6만!" />
+                      <img src="./images/top-slide-image6.gif" alt="누적 수강생 6만!" />
                     </div>
                     <div class="cover_left">
                       <h1 class="title" style="color: #000000;">
@@ -210,7 +211,7 @@
                 <div class="slide-content" style="background-color: #59cf92">
                   <div class="container">
                     <div class="cover_right">
-                      <img src="/images/top-slide-image7.png" alt="누적 수강생 6만!" />
+                      <img src="./images/top-slide-image7.png" alt="누적 수강생 6만!" />
                     </div>
                     <div class="cover_left">
                       <div class="tags">
@@ -226,12 +227,32 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-pagination"></div>
+            </div>  
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination-container container">
+              <div class="pagination-control">
+
+                <button class="control-button-prev top">
+                  <i class="fas fa-angle-left"></i>
+                </button>
+                <button class="control-button play invisible">
+                  <i class="fas fa-caret-right"></i>
+                </button>
+                <button class="control-button stop">
+                  <svg width="14px" height="14px" enable-background="new 0 0 155.3 159.3" viewBox="0 0 155.3 159.3" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ffffff" d="m62 135.3h-13.3c-1.9 0-3.4-1.5-3.4-3.4v-104.6c0-1.9 1.5-3.4 3.4-3.4h13.3c1.9 0 3.4 1.5 3.4 3.4v104.7c-.1 1.8-1.6 3.3-3.4 3.3z"></path><path fill="#ffffff" d="m106.6 135.3h-13.3c-1.9 0-3.4-1.5-3.4-3.4v-104.6c0-1.9 1.5-3.4 3.4-3.4h13.3c1.9 0 3.4 1.5 3.4 3.4v104.7c0 1.8-1.5 3.3-3.4 3.3z"></path>
+                  </svg>
+                </button>
+                <button class="control-button-next top">
+                  <i class="fas fa-angle-right"></i>
+                </button>
+              </div>
+              <div class="divider"></div>
+              <div class="swiper-pagination top"></div>  
+            </div>
+            
+          
+            
 
           </div>
       </section>
