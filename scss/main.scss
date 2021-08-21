@@ -165,7 +165,7 @@ $green: #1dc078;
       border-radius: 20px;
       background-color: rgba( #000, 0.5);
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
 
       button{
@@ -177,6 +177,8 @@ $green: #1dc078;
         cursor: pointer;
         font-size: 18px;
         text-align: center;
+        width: 14px;
+        
         &.invisible{
           display: none;
         }
