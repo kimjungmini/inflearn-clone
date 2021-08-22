@@ -1,7 +1,4 @@
 $green: #1dc078;
-body{
-  overflow-x: hidden; //가로 스크롤 없애기
-}
 // COMMON
 .container{
   width: 1200px;
@@ -153,7 +150,7 @@ body{
 .swiper-container.top{
   height: 320px;
   position: relative;
-  overflow: visible; //overflow로 밀어서 해결 x축 스크롤은 body태그에서 해결
+  overflow-y: visible; // overflow로 해결
   
   .swiper-pagination-container{
     display: flex;
