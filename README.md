@@ -23,5 +23,12 @@ align-items: center;
 # overflow 속성
 
 블록 요소 바깥으로 요소가 안밀어지면 overflow속성을 생각해본다.
+이거좀 다시 생각해 볼 필요 있을듯
+
+# swiper 너무 어렵고
+
+나중에 문제점 다시 정리하겠지만 top slider 만들때 너무 힘들었음 pagination container가 자꾸 안보여서 ㅠㅠ 원인 나중에 다시 파악할것
+
+커스텀 버튼 만드는것도 어렵네 ㅠㅠ
 
 # 다음에 할일

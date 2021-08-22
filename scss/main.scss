@@ -1,4 +1,7 @@
 $green: #1dc078;
+body{
+  overflow-x: hidden; //가로 스크롤 없애기
+}
 // COMMON
 .container{
   width: 1200px;
@@ -26,6 +29,7 @@ $green: #1dc078;
   left: 0;
   right: 0;
   z-index: 20;
+  background-color: #fff;
 }
 
 #header .navbar{
@@ -149,16 +153,13 @@ $green: #1dc078;
 .swiper-container.top{
   height: 320px;
   position: relative;
+  overflow: visible;
   
-
   .swiper-pagination-container{
     display: flex;
     align-items: center;
     height: 64px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    
+
     .pagination-control{
       padding: 0 1rem;
       width: 135px;
@@ -368,10 +369,115 @@ section.welcome{
     margin-top: 4px;
   }
 
-  // .swiper-container.welcome{
+  .welcome-slide{
+    .welcome{
+      color: black;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      // opacity: 0.85;
+    }
+  }
+
+  .swiper-container.welcome{
+    margin-top: 25px;
     
-  //   .swiper-slide{
-  //     text-align: center;
-  //   }
-  // }
+    .swiper-slide{
+      cursor: pointer;
+
+      .card-front:hover{
+        opacity: 0.5; // 이따 수정
+      }
+      
+      .card-course{
+        position: relative;
+
+        .card-back{
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: rgba(0,0,0,0.8);
+          color: #fff;
+          font-size: 13px;
+          display: none;
+  
+          .course_title{
+            font-size: 16px;
+            line-height: 1.25;
+            padding: 8px;
+            font-weight: 700;
+            text-overflow: ellipsis;
+          }
+  
+          .course_description{
+            padding: 8px;
+            line-height: 1.25;
+          }
+  
+          .back_course_meatas{
+            color: #c5ebf8;
+            padding: 8px;
+          }
+  
+          .course_card_control{
+            position: absolute;
+            bottom: 0;
+            right: 2px;
+            color: #fff;
+            line-height: 1.65;
+          }
+        }
+
+        &:hover > .card-back{
+          display: block;
+        }
+      }
+      
+      
+      .card-course img{
+        max-width: 100%;
+      }
+
+      .card-course .card-content{
+        margin-top: 8px;
+
+        .course-title{
+          font-weight: 700;
+          line-height: 1.5rem;
+          height: 3rem;
+          margin-bottom: 8px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .instructor{
+          color: grey;
+          font-size: 0.9rem;
+          margin-bottom: 8px;
+        }
+        .rating{
+          margin-bottom: 8px;
+          color: #fdcc11;
+
+          .review_cnt{
+            color: black;
+          }
+        }
+      }
+
+      .price{
+        color: #175cbe;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .tags{
+        text-align: start;
+      }
+      
+
+    }
+  }
 }

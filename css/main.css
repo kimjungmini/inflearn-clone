@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -24,6 +28,7 @@
   left: 0;
   right: 0;
   z-index: 20;
+  background-color: #fff;
 }
 
 #header .navbar {
@@ -163,6 +168,7 @@
 .swiper-container.top {
   height: 320px;
   position: relative;
+  overflow: visible;
 }
 
 .swiper-container.top .swiper-pagination-container {
@@ -173,9 +179,6 @@
       -ms-flex-align: center;
           align-items: center;
   height: 64px;
-  position: fixed;
-  left: 0;
-  right: 0;
 }
 
 .swiper-container.top .swiper-pagination-container .pagination-control {
@@ -440,5 +443,113 @@ section.welcome .subtext {
   color: grey;
   font-weight: 400;
   margin-top: 4px;
+}
+
+section.welcome .welcome-slide .welcome {
+  color: black;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+section.welcome .swiper-container.welcome {
+  margin-top: 25px;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide {
+  cursor: pointer;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-front:hover {
+  opacity: 0.5;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course {
+  position: relative;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 13px;
+  display: none;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-back .course_title {
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 8px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-back .course_description {
+  padding: 8px;
+  line-height: 1.25;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-back .back_course_meatas {
+  color: #c5ebf8;
+  padding: 8px;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-back .course_card_control {
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  color: #fff;
+  line-height: 1.65;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course:hover > .card-back {
+  display: block;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course img {
+  max-width: 100%;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-content {
+  margin-top: 8px;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-content .course-title {
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 3rem;
+  margin-bottom: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-content .instructor {
+  color: grey;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-content .rating {
+  margin-bottom: 8px;
+  color: #fdcc11;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .card-course .card-content .rating .review_cnt {
+  color: black;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .price {
+  color: #175cbe;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+section.welcome .swiper-container.welcome .swiper-slide .tags {
+  text-align: start;
 }
 /*# sourceMappingURL=main.css.map */

@@ -48,10 +48,14 @@ topStopButton.addEventListener("click", function () {
 // welcome swiper
 const welcomeSwiper = new Swiper(".swiper-container.welcome", {
   direction: "horizontal",
-  // slidesPerView: 5,
+  slidesPerView: 5,
+  spaceBetween: 30,
+  slidesPerGroup: 5,
 
   navigation: {
     nextEl: ".swiper-button-next.welcome",
     prevEl: ".swiper-button-prev.welcome",
   },
 });
+
+// welcome swiper slider hover
