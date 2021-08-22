@@ -163,12 +163,6 @@
 .swiper-container.top {
   height: 320px;
   position: relative;
-  overflow: visible;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100vh;
-  min-height: 0;
-  min-width: 0;
 }
 
 .swiper-container.top .swiper-pagination-container {
@@ -179,6 +173,9 @@
       -ms-flex-align: center;
           align-items: center;
   height: 64px;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .swiper-container.top .swiper-pagination-container .pagination-control {
