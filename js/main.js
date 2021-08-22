@@ -1,3 +1,4 @@
+// topSwiper
 //renderBullet에 속성을 주면 여기를 순회하는것 같음
 const topMenu = [
   "광복절 주간 이벤트",
@@ -13,6 +14,7 @@ const topSwiper = new Swiper(".swiper-container.top", {
   direction: "horizontal",
   loop: true,
   autoplay: true,
+  slidesPerView: 1,
 
   pagination: {
     el: ".swiper-pagination.top",
@@ -41,4 +43,15 @@ topStopButton.addEventListener("click", function () {
   topSwiper.autoplay.stop();
   topPlayButton.classList.remove("invisible");
   topStopButton.classList.add("invisible");
+});
+
+// welcome swiper
+const welcomeSwiper = new Swiper(".swiper-container.welcome", {
+  direction: "horizontal",
+  // slidesPerView: 5,
+
+  navigation: {
+    nextEl: ".swiper-button-next.welcome",
+    prevEl: ".swiper-button-prev.welcome",
+  },
 });
