@@ -153,7 +153,7 @@ body{
 .swiper-container.top{
   height: 320px;
   position: relative;
-  overflow: visible;
+  overflow: visible; //overflow로 밀어서 해결 x축 스크롤은 body태그에서 해결
   
   .swiper-pagination-container{
     display: flex;
@@ -370,13 +370,40 @@ section.welcome{
   }
 
   .welcome-slide{
-    .welcome{
-      color: black;
+    position: relative;
+    
+    .welcome-btn{
+      opacity: 0.85;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      z-index: 10;
       background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 14px;
-      // opacity: 0.85;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      position: absolute;
+      top: 120px;
+      // bottom: 0;
+
+      &.disable{
+        color: #efefef;
+        border: 1px solid #efefef;
+        cursor: not-allowed;
+      }
+    }
+
+    .welcome-button-prev{
+      left: -20px;
+    }
+
+    .welcome-button-next{
+      right: -20px;
     }
   }
 

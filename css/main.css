@@ -445,12 +445,46 @@ section.welcome .subtext {
   margin-top: 4px;
 }
 
-section.welcome .welcome-slide .welcome {
-  color: black;
+section.welcome .welcome-slide {
+  position: relative;
+}
+
+section.welcome .welcome-slide .welcome-btn {
+  opacity: 0.85;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  z-index: 10;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 120px;
+}
+
+section.welcome .welcome-slide .welcome-btn.disable {
+  color: #efefef;
+  border: 1px solid #efefef;
+  cursor: not-allowed;
+}
+
+section.welcome .welcome-slide .welcome-button-prev {
+  left: -20px;
+}
+
+section.welcome .welcome-slide .welcome-button-next {
+  right: -20px;
 }
 
 section.welcome .swiper-container.welcome {

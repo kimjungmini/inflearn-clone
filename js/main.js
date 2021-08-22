@@ -53,9 +53,44 @@ const welcomeSwiper = new Swiper(".swiper-container.welcome", {
   slidesPerGroup: 5,
 
   navigation: {
-    nextEl: ".swiper-button-next.welcome",
-    prevEl: ".swiper-button-prev.welcome",
+    nextEl: ".welcome-button-next.welcome-btn",
+    prevEl: ".welcome-button-prev.welcome-btn",
   },
 });
 
+let curPage = 1;
+const welcomePrevButton = document.querySelector(
+  ".welcome-button-prev.welcome-btn"
+);
+const welcomeNextButton = document.querySelector(
+  ".welcome-button-next.welcome-btn"
+);
+
+//welcomePage의 curpage값을 기반으로 버튼을 온오프 해주는함수
+function buttonOnOff(curpage) {
+  if (curPage == 1) {
+    welcomePrevButton.classList.add("disable");
+  } else {
+    welcomePrevButton.classList.remove("disable");
+  }
+  if (curPage == 3) {
+    welcomeNextButton.classList.add("disable");
+  } else {
+    welcomeNextButton.classList.remove("disable");
+  }
+}
+
+welcomePrevButton.addEventListener("click", function () {
+  if (curPage != 1) {
+    curPage--;
+  }
+  buttonOnOff(curPage);
+});
+
+welcomeNextButton.addEventListener("click", function () {
+  if (curPage != 3) {
+    curPage++;
+  }
+  buttonOnOff(curPage);
+});
 // welcome swiper slider hover
