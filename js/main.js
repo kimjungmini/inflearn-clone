@@ -58,7 +58,7 @@ const welcomeSwiper = new Swiper(".swiper-container.welcome", {
   },
 });
 
-let curPage = 1;
+let welcomeCurPage = 1;
 const welcomePrevButton = document.querySelector(
   ".welcome-button-prev.welcome-btn"
 );
@@ -67,13 +67,13 @@ const welcomeNextButton = document.querySelector(
 );
 
 //welcomePage의 curpage값을 기반으로 버튼을 온오프 해주는함수
-function buttonOnOff(curpage) {
-  if (curPage == 1) {
+function welcomeButtonOnOff(curpage) {
+  if (curpage == 1) {
     welcomePrevButton.classList.add("disable");
   } else {
     welcomePrevButton.classList.remove("disable");
   }
-  if (curPage == 3) {
+  if (curpage == 3) {
     welcomeNextButton.classList.add("disable");
   } else {
     welcomeNextButton.classList.remove("disable");
@@ -81,16 +81,109 @@ function buttonOnOff(curpage) {
 }
 
 welcomePrevButton.addEventListener("click", function () {
-  if (curPage != 1) {
-    curPage--;
+  if (welcomeCurPage != 1) {
+    welcomeCurPage--;
   }
-  buttonOnOff(curPage);
+  welcomeButtonOnOff(welcomeCurPage);
 });
 
 welcomeNextButton.addEventListener("click", function () {
-  if (curPage != 3) {
-    curPage++;
+  if (welcomeCurPage != 3) {
+    welcomeCurPage++;
   }
-  buttonOnOff(curPage);
+  welcomeButtonOnOff(welcomeCurPage);
 });
-// welcome swiper slider hover
+// roadmap swiper
+const roadmapSwiper = new Swiper(".swiper-container.roadmap", {
+  direction: "horizontal",
+  slidesPerView: 4,
+  spaceBetween: 30,
+  slidesPerGroup: 4,
+  navigation: {
+    nextEl: ".roadmap-button-next.roadmap-btn",
+    prevEl: ".roadmap-button-prev.roadmap-btn",
+  },
+});
+
+let roadmapCurPage = 1;
+const roadMapPrevButton = document.querySelector(
+  ".roadmap-button-prev.roadmap-btn"
+);
+const roadMapNextButton = document.querySelector(
+  ".roadmap-button-next.roadmap-btn"
+);
+
+//welcomePage의 curpage값을 기반으로 버튼을 온오프 해주는함수
+function roadMapButtonOnOff(curpage) {
+  if (curpage == 1) {
+    roadMapPrevButton.classList.add("disable");
+  } else {
+    roadMapPrevButton.classList.remove("disable");
+  }
+  if (curpage == 3) {
+    roadMapNextButton.classList.add("disable");
+  } else {
+    roadMapNextButton.classList.remove("disable");
+  }
+}
+
+roadMapPrevButton.addEventListener("click", function () {
+  if (roadmapCurPage != 1) {
+    roadmapCurPage--;
+  }
+  roadMapButtonOnOff(roadmapCurPage);
+});
+
+roadMapNextButton.addEventListener("click", function () {
+  if (roadmapCurPage != 3) {
+    roadmapCurPage++;
+  }
+  roadMapButtonOnOff(roadmapCurPage);
+});
+// new-courses
+const newCoursesSwiper = new Swiper(".swiper-container.new-courses", {
+  direction: "horizontal",
+  slidesPerView: 5,
+  spaceBetween: 30,
+  slidesPerGroup: 5,
+
+  navigation: {
+    nextEl: ".new-courses-button-next.new-courses-btn",
+    prevEl: ".new-courses-button-prev.new-courses-btn",
+  },
+});
+
+let newCoursesCurPage = 1;
+const newCoursesPrevButton = document.querySelector(
+  ".new-courses-button-prev.new-courses-btn"
+);
+const newCoursesNextButton = document.querySelector(
+  ".new-courses-button-next.new-courses-btn"
+);
+
+function newCoursesButtonOnOff(curpage) {
+  if (curpage == 1) {
+    newCoursesPrevButton.classList.add("disable");
+  } else {
+    newCoursesPrevButton.classList.remove("disable");
+  }
+  if (curpage == 3) {
+    newCoursesNextButton.classList.add("disable");
+  } else {
+    newCoursesNextButton.classList.remove("disable");
+  }
+}
+
+newCoursesPrevButton.addEventListener("click", function () {
+  if (newCoursesCurPage != 1) {
+    newCoursesCurPage--;
+  }
+  welcomeButtonOnOff(newCoursesCurPage);
+});
+
+newCoursesNextButton.addEventListener("click", function () {
+  if (newCoursesCurPage != 3) {
+    newCoursesCurPage++;
+  }
+  welcomeButtonOnOff(newCoursesCurPage);
+});

@@ -29,6 +29,13 @@ align-items: center;
 
 일단 해결한 문제이긴 하지만 swiper-wrapper 바깥에 pagination-control 요소가 위치를해서 제대로된 위치에 가더라도 pagination-control이 보이지 않는 문제가 생겼음. pagination-control을 swiper-wrapper안으로 밀어 넣어봤더니 기존에 스타일과 너무 충돌이 심해서 overflow 속성을 이용해서 문제를 해결 했음.
 
+?? 분명 처음에는 pagination container가 안보였는데 다시 켜보니 잘 보임 live-server 에러 였던거 같음.
+
+이번에는 또 안보이네 이유가 뭘까 다시 overflow로 해결했음
+overflow-y도 안먹음
+
+더이상은 고칠 엄두가 안나네
+
 # swiper 너무 어렵고
 
 나중에 문제점 다시 정리하겠지만 top slider 만들때 너무 힘들었음 pagination container가 자꾸 안보여서 ㅠㅠ 원인 나중에 다시 파악할것
