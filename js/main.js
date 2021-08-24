@@ -188,6 +188,7 @@ newCoursesNextButton.addEventListener("click", function () {
   welcomeButtonOnOff(newCoursesCurPage);
 });
 
+//review swiper
 const reviewSwiper = new Swiper(".swiper-container.review", {
   direction: "vertical",
   autoHeight: true,
@@ -196,4 +197,51 @@ const reviewSwiper = new Swiper(".swiper-container.review", {
   slidesPerView: 3,
   slidesPerGroup: 3,
   spaceBetween: 30,
+});
+
+// banner2 swiper
+const banner2Swiper = new Swiper(".swiper-container.banner2", {
+  direction: "horizontal",
+  slidesPerView: 1,
+
+  navigation: {
+    nextEl: ".banner2-button-next",
+    prevEl: ".banner2-button-prev",
+  },
+});
+
+let banner2CurPage = 1;
+const banner2PrevButton = document.querySelector(
+  ".banner2-button-prev.banner2-btn"
+);
+const banner2NextButton = document.querySelector(
+  ".banner2-button-next.banner2-btn"
+);
+
+//welcomePage의 curpage값을 기반으로 버튼을 온오프 해주는함수
+function banner2ButtonOnOff(curpage) {
+  if (curpage == 1) {
+    banner2PrevButton.classList.add("disable");
+  } else {
+    banner2PrevButton.classList.remove("disable");
+  }
+  if (curpage == 4) {
+    banner2NextButton.classList.add("disable");
+  } else {
+    banner2NextButton.classList.remove("disable");
+  }
+}
+
+banner2PrevButton.addEventListener("click", function () {
+  if (banner2CurPage != 1) {
+    banner2CurPage--;
+  }
+  banner2ButtonOnOff(banner2CurPage);
+});
+
+banner2NextButton.addEventListener("click", function () {
+  if (banner2CurPage != 4) {
+    banner2CurPage++;
+  }
+  banner2ButtonOnOff(banner2CurPage);
 });
