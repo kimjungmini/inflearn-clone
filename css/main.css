@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -892,5 +896,78 @@ section.new-courses .swiper-container.new-courses .swiper-slide .price {
 
 section.new-courses .swiper-container.new-courses .swiper-slide .tags {
   text-align: start;
+}
+
+section.review {
+  margin-top: 24px;
+}
+
+section.review .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.review .content-left {
+  padding: 40px 16px 40px 0;
+}
+
+section.review #count_user {
+  color: #1dc078;
+}
+
+section.review .title {
+  font-size: 2.25rem;
+  line-height: 1.33;
+  color: #242424;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section.review .text {
+  color: #757575;
+  margin-bottom: 36px;
+}
+
+section.review .btn {
+  text-decoration: none;
+  border: 1px solid #1dc078;
+}
+
+section.review .content-right .swiper-container.review {
+  height: 480px;
+}
+
+section.review .content-right .box {
+  max-width: 590px;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  border-radius: 4px;
+  color: #333;
+}
+
+section.review .content-right .box .box_top {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 24px;
+}
+
+section.review .content-right .box .box_bottom {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 24px;
+  color: grey;
+}
+
+section.review .content-right .box .box_bottom .course {
+  color: black;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */

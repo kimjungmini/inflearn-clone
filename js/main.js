@@ -97,8 +97,8 @@ welcomeNextButton.addEventListener("click", function () {
 const roadmapSwiper = new Swiper(".swiper-container.roadmap", {
   direction: "horizontal",
   slidesPerView: 4,
-  spaceBetween: 30,
   slidesPerGroup: 4,
+  spaceBetween: 30,
   navigation: {
     nextEl: ".roadmap-button-next.roadmap-btn",
     prevEl: ".roadmap-button-prev.roadmap-btn",
@@ -186,4 +186,14 @@ newCoursesNextButton.addEventListener("click", function () {
     newCoursesCurPage++;
   }
   welcomeButtonOnOff(newCoursesCurPage);
+});
+
+const reviewSwiper = new Swiper(".swiper-container.review", {
+  direction: "vertical",
+  autoHeight: true,
+  loop: true,
+  mousewheel: true,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 30,
 });
