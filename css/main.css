@@ -428,6 +428,10 @@ section.welcome {
   padding-top: 24px;
 }
 
+section.welcome .content {
+  width: 100%;
+}
+
 section.welcome .title {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -448,6 +452,10 @@ section.welcome .subtext {
   color: grey;
   font-weight: 400;
   margin-top: 4px;
+}
+
+section.welcome .swiper-container.welcome {
+  overflow: hidden;
 }
 
 section.welcome .welcome-slide {
@@ -617,6 +625,10 @@ section.roadmap .header .subtext {
   margin-top: 4px;
 }
 
+section.roadmap .swiper-container.roadmap {
+  overflow: hidden;
+}
+
 section.roadmap .roadmap-slide .swiper-slide .card {
   max-width: 100%;
 }
@@ -651,7 +663,7 @@ section.roadmap .roadmap-slide .roadmap-btn {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 120px;
+  top: 160px;
 }
 
 section.roadmap .roadmap-slide .roadmap-btn.disable {
@@ -754,6 +766,10 @@ section.new-courses .subtext {
   color: grey;
   font-weight: 400;
   margin-top: 4px;
+}
+
+section.new-courses .swiper-container.new-courses {
+  overflow: hidden;
 }
 
 section.new-courses .new-courses-slide {
@@ -917,6 +933,10 @@ section.review .content-left {
 
 section.review #count_user {
   color: #1dc078;
+}
+
+section.review .swiper-container.review {
+  overflow: hidden;
 }
 
 section.review .title {

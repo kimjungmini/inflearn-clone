@@ -162,6 +162,7 @@ const newCoursesNextButton = document.querySelector(
 );
 
 function newCoursesButtonOnOff(curpage) {
+  console.log(newCoursesCurPage);
   if (curpage == 1) {
     newCoursesPrevButton.classList.add("disable");
   } else {
@@ -178,14 +179,14 @@ newCoursesPrevButton.addEventListener("click", function () {
   if (newCoursesCurPage != 1) {
     newCoursesCurPage--;
   }
-  welcomeButtonOnOff(newCoursesCurPage);
+  newCoursesButtonOnOff(newCoursesCurPage);
 });
 
 newCoursesNextButton.addEventListener("click", function () {
   if (newCoursesCurPage != 3) {
     newCoursesCurPage++;
   }
-  welcomeButtonOnOff(newCoursesCurPage);
+  newCoursesButtonOnOff(newCoursesCurPage);
 });
 
 //review swiper

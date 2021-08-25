@@ -349,6 +349,10 @@ section.search{
 section.welcome{
   padding-top: 24px;
 
+  .content{
+    width: 100%;
+  }
+
   .title{
     font-size: 1.5rem;
     line-height: 1.5;
@@ -369,6 +373,10 @@ section.welcome{
     color: grey;
     font-weight: 400;
     margin-top: 4px;
+  }
+
+  .swiper-container.welcome{
+    overflow: hidden;
   }
 
   .welcome-slide{
@@ -534,6 +542,10 @@ section.roadmap{
     }
   }
 
+  .swiper-container.roadmap{
+    overflow: hidden;
+  }
+
   .roadmap-slide{
     .swiper-slide{
       .card{
@@ -566,7 +578,7 @@ section.roadmap{
       justify-content: center;
       
       position: absolute;
-      top: 120px;
+      top: 160px;
       // bottom: 0;
 
       &.disable{
@@ -670,6 +682,10 @@ section.new-courses{
     color: grey;
     font-weight: 400;
     margin-top: 4px;
+  }
+
+  .swiper-container.new-courses{
+    overflow: hidden;
   }
 
   .new-courses-slide{
@@ -831,6 +847,10 @@ section.review{
     color: $green;
   }
 
+  .swiper-container.review{
+    overflow: hidden;
+  }
+
   .title{
     font-size: 2.25rem;
     line-height: 1.33;
@@ -900,7 +920,6 @@ section.banner2{
     color: $green;
     text-decoration: none;
   }
-
   .swiper-slide{
     padding: 36px 0;
   }
