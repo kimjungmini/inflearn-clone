@@ -188,6 +188,7 @@ body {
 
 .swiper-container.top .swiper-pagination-container .pagination-control {
   padding: 0 1rem;
+  bottom: 0;
   width: 135px;
   height: 36px;
   color: #fff;
@@ -203,6 +204,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+#main > section.top-slide > div > div.swiper-pagination-container.container > div.swiper-pagination.top.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 0;
+}
+
 
 .swiper-container.top .swiper-pagination-container .pagination-control button {
   display: block;
